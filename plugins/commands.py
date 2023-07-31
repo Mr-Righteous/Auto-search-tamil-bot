@@ -23,12 +23,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/+r9ArDaaCETE0OGU9"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url="https://t.me/+oSmcepKMSp01NzI0"),
+                    InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴘ🍿', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -43,15 +43,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('Eᴀʀɴ 💵', callback_data="shortlink_info"),
+                    InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴘ🍿', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('💬 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('📝 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAIBYmOkbpQ0brb4z4ggbPv4peTgcDb-AAIlBQACSr5ZVk64AdT0N9vYHgQ") 
@@ -73,7 +73,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
+                    "📡 Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ 📺", url=invite_link.invite_link
                 )
             ]
         ]
@@ -94,15 +94,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('Eᴀʀɴ 💵', callback_data="shortlink_info"),
+                    InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴘ🍿', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('💬 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('📝 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -153,10 +153,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
+                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🍿", url="t.me/+Yw5Xaer63RhjZTQ0")
                          ]
                         ]
                     )
@@ -172,10 +172,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
+                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🔮", url="t.me/+Yw5Xaer63RhjZTQ0")
                          ]
                         ]
                     )
@@ -336,10 +336,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
+                      InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🍿", url="t.me/+Yw5Xaer63RhjZTQ0")
                      ]
                     ]
                 )
@@ -398,17 +398,17 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
+                      InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/+Yw5Xaer63RhjZTQ0")
                      ]
                     ]
                 )
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '@TeamHMT ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@BLASTWALLZTV ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -429,7 +429,7 @@ async def start(client, message):
             pass
         return await message.reply('No such file exist.')
     files = files_[0]
-    title = '@TeamHMT ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    title = '@BLASTWALLZTV ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
     size=get_size(files.file_size)
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:
@@ -461,7 +461,7 @@ async def start(client, message):
               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
+              InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🍿", url="t.me/+Yw5Xaer63RhjZTQ0")
              ]
             ]
         )
@@ -953,14 +953,14 @@ async def deletemultiplefiles(bot, message):
         parse_mode=enums.ParseMode.HTML
     )
 
-@Client.on_message(filters.command("shortlink"))
+@Client.on_message(filters.command("shortlink") & filters.user(ADMINS))
 async def shortlink(bot, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
         return await message.reply(f"You are anonymous admin. Turn off anonymous admin and try again this command")
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n—> /shortlink ""{your_shortener_website_name} {your_shortener_api}\n\n#Sample:-\n/shortlink mplaylink.com 1f1da5c9df9a58058672ac8d8134e203b03426a1\n\nThat's it!!! Enjoy Earning Money 💲\n\n[[[ Trusted Earning Site - https://bit.ly/mplaylink ]]]\n\nIf you have any Doubts, Feel Free to Ask me - @TeamHMT_Bot\n\n(Puriyala na intha bot la message pannunga - @TeamHMT_bot)</b>")
+        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n—> /shortlink ""{your_shortener_website_name} {your_shortener_api}\n\n#Sample:-\n/shortlink mplaylink.com 5d3af679123d41bfe09c0fe118eace6a40d1e904\n\nThat's it!!! Enjoy Earning Money 💲\n\n[[[ Trusted Earning Site - https://bit.ly/mplaylink ]]]\n\nIf you have any Doubts, Feel Free to Ask me - @BLASTWALLZTV\n\n(Puriyala na intha bot la message pannunga - @TeamHMT_bot)</b>")
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
@@ -976,7 +976,7 @@ async def shortlink(bot, message):
     try:
         command, shortlink_url, api = data.split(" ")
     except:
-        return await message.reply_text("<b>Command Incomplete :(\n\nGive me a shortener website link and api along with the command !\n\nFormat: <code>/shortlink mplaylink.com 1f1da5c9df9a58058672ac8d8134e203b03426a1</code></b>")
+        return await message.reply_text("<b>Command Incomplete :(\n\nGive me a shortener website link and api along with the command !\n\nFormat: <code>/shortlink mplaylink.com 5d3af679123d41bfe09c0fe118eace6a40d1e904</code></b>")
     reply = await message.reply_text("<b>Please Wait...</b>")
     shortlink_url = re.sub(r"https?://?", "", shortlink_url)
     shortlink_url = re.sub(r"[:/]", "", shortlink_url)
