@@ -150,7 +150,13 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 
     TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} </b>"""
+    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} </b>
+╔════ᴊᴏɪɴ 4🔮════╗
+<a href=https://t.me/BLASTWALLZTV> 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡</a>
+<a href=https://t.me/BLASTWALLZTV>𝐓𝐫𝐚𝐧𝐳𝐥𝐚𝐭𝐞𝐝🇺🇬 𝐌𝐨𝐯𝐢𝐞𝐬</a>
+<a  href=https://t.me/BLASTWALLZTV>𝐊𝐨𝐫𝐞𝐚𝐧 𝐃𝐫𝐚𝐦𝐚𝐬🎌
+╚════ᴊᴏɪɴ 4🔮════╝</b>""" 
+"""
 
     SHORTLINK_INFO = """
 <b>──────「<a href=https://t.me/BLASTWALLZTV> Hᴏᴡ ᴛᴏ Eᴀʀɴ Mᴏɴᴇʏ </a> 」──────
@@ -201,7 +207,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂: {file_name}
+    CAPTION = """<b>📂: <code>{file_name}</code>
 ╔════ᴊᴏɪɴ ᴜs🔮════╗
 ▫️<a href=https://t.me/BLASTWALLZTV> 𝐁𝐋𝐀𝐒𝐓𝐖𝐀𝐋𝐋𝐙𝐓𝐕📡 </a>
 ╚════ᴊᴏɪɴ ᴜs🔮════╝</b>""" 
