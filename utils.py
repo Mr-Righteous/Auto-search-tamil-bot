@@ -630,6 +630,9 @@ async def get_tutorial(chat_id):
             TUTORIAL_URL = settings['tutorial']
         else:
             TUTORIAL_URL = TUTORIAL
+    else:
+        TUTORIAL_URL = TUTORIAL
+    return TUTORIAL_URL
   
 async def get_verify_shorted_link(link):
     API = SHORTLINK_API
