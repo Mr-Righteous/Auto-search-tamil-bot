@@ -150,16 +150,16 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
-                       ],[
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🍿", url="t.me/+Yw5Xaer63RhjZTQ0")
-                         ]
-                        ]
-                    )
+                  #  reply_markup=InlineKeyboardMarkup(
+                  #      [
+                  #      [
+                  #        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
+                  #        InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
+                  #     ],[
+                  #        InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🍿", url="t.me/+Yw5Xaer63RhjZTQ0")
+                  #      ]
+                  #      ]
+                  #  )
                 )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -169,16 +169,16 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
-                       ],[
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🔮", url="t.me/+Yw5Xaer63RhjZTQ0")
-                         ]
-                        ]
-                    )
+                  #  reply_markup=InlineKeyboardMarkup(
+                 #       [
+                   #      [
+                  #        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=f'https://t.me/{SUPPORT_CHAT}'),
+                   #       InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
+                  #     ],[
+                   #       InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🔮", url="t.me/+Yw5Xaer63RhjZTQ0")
+                    #     ]
+                  #      ]
+                  #  )
                 )
             except Exception as e:
                 logger.warning(e, exc_info=True)
