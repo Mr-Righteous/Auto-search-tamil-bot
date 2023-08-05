@@ -150,12 +150,14 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 
     TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} </b>
-╔════ᴊᴏɪɴ 4🔮════╗
-「<a href=https://t.me/+kIHJBYxTUqhjNzg0> 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡</a>
+    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} </b> 
+    ꜱꜱɴᴅ ᴍᴏᴠɪᴇ🎥 ᴏʀ ꜱᴇʀɪᴇꜱ📺 ɴᴀᴍᴇ ʜᴇʀᴇ ᴀɴᴅ ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ɪᴛ😘
+    
+╔════ᴊᴏɪɴ🔮════╗
+<a href=https://t.me/+kIHJBYxTUqhjNzg0>𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡</a>
 <a href=https://t.me/Trnzrqstsbot>𝐓𝐫𝐚𝐧𝐳𝐥𝐚𝐭𝐞𝐝🇺🇬 𝐌𝐨𝐯𝐢𝐞𝐬</a>
-<a  href=https://t.me/koreandramaseries99>𝐊𝐨𝐫𝐞𝐚𝐧 𝐃𝐫𝐚𝐦𝐚𝐬🎌</a>
-╚════ᴊᴏɪɴ 4🔮════╝</b>""" 
+<a href=https://t.me/koreandramaseries99>𝐊𝐨𝐫𝐞𝐚𝐧 𝐃𝐫𝐚𝐦𝐚𝐬🎌</a>
+╚════ᴊᴏɪɴ🔮════╝</b>""" 
 
 
     SHORTLINK_INFO = """
