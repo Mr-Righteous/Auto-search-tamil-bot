@@ -39,6 +39,7 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=GRP_LNK),
+                 ],[
                     InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                  ],[
                     InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ🔮", url="t.me/mrrighteous99")
@@ -62,6 +63,7 @@ async def save_group(bot, message):
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=GRP_LNK),
+                                                                        ],[
                                                                            InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
                                                                         ],[
                                                                            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ🔮", url="t.me/mrrighteous99")
@@ -90,6 +92,7 @@ async def leave_a_chat(bot, message):
     try:
         buttons = [[
             InlineKeyboardButton('Support Grp📮', url="https://t.me/+oSmcepKMSp01NzI0"),
+        ],[
             InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑 🔮', url="https://t.me/mrrighteous99")
         ],[
             InlineKeyboardButton('Use Me Here 🤞', url=f'https://t.me/+Yw5Xaer63RhjZTQ0')
