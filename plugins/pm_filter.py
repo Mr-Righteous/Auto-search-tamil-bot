@@ -955,16 +955,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         file_id=file_id,
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup(
-                            [
-                             [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Grᴘ📮', url=SUPPORT_CHAT),
-                              InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
-                            ],[
-                              InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🔮", url="t.me/+Yw5Xaer63RhjZTQ0")
-                             ]
-                            ]
-                        )
+                      #  reply_markup=InlineKeyboardMarkup(
+                      #     [
+                      #       [
+                      #        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Grᴘ📮', url=SUPPORT_CHAT),
+                      #        InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
+                      #      ],[
+                      #        InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🔮", url="t.me/+Yw5Xaer63RhjZTQ0")
+                      #       ]
+                      #      ]
+                      #  )
                     )
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
@@ -1048,16 +1048,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=SUPPORT_CHAT),
-                  InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
-                ],[
-                  InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🔮", url="t.me/+Yw5Xaer63RhjZTQ0")
-                 ]
-                ]
-            )
+           # reply_markup=InlineKeyboardMarkup(
+           #     [
+           #      [
+           #       InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴘ📮', url=SUPPORT_CHAT),
+           #       InlineKeyboardButton('𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋📡', url=CHNL_LNK)
+           #     ],[
+           #       InlineKeyboardButton("Mᴏᴠɪᴇ Rᴏ̨sᴛ Gʀᴘ🔮", url="t.me/+Yw5Xaer63RhjZTQ0")
+           #      ]
+           #     ]
+           # )
         )
     
     elif query.data == "pages":
